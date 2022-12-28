@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&family=Nunito:wght@300;400;700&display=swap");
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+  font-size: 131.3%; //21px
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: $gray-75;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

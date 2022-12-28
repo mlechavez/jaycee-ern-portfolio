@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Smith</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container collapsible">
+          <a href="/" class="navbar__brand"
+            ><img src="/images/logo.svg" alt="Logo"
+          /></a>
+          <span
+            class="fa fa-bars navbar__toggler collapsible__toggler"
+            aria-hidden="true"
+          ></span>
+          <div class="navbar__menu collapsible__content">
+            <ul class="navbar__menu-list">
+              <li class="navbar__menu-item">
+                <a class="text-gray-100" href="#intro">About Me</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a class="text-gray-100" href="#talk">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar__menu-list">
+              <li class="navbar__menu-item">
+                <a class="text-primary" href="#">johnsmith@gmail.com</a>
+              </li>
+              <li class="navbar__menu-item">
+                <span class="text-gray-100">(+63) 917 123 4567</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="intro" class="block intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 intro__left">
+            <h1 class="intro__name">Hi, I'm John.</h1>
+            <h2 class="intro__title">A Web Developer Based in Philippines</h2>
+            <p class="intro__tagline">
+              Web Development has always been my passion. I build amazing
+              websites that clients will love. And if you're the one looking for
+              a web developer that likes to get things done, let's discuss.
+            </p>
+            <a href="#work-list" class="btn btn-primary intro__cta">
+              See my work
+              <span class="fa fa-arrow-down"></span>
+            </a>
+          </div>
+          <div class="col-xs-hidden col-lg-6 intro__right">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/john-smith.webp 1x, images/john-smith@2x.webp 2x"
+              />
+              <source
+                type="image/png"
+                srcset="images/john-smith.png 1x, images/john-smith@2x.png 2x"
+              />
+              <img
+                class="intro__image"
+                src="/images/john-smith@2x.png"
+                alt="John Smith"
+              />
+            </picture>
+            <div class="intro__social-icons">
+              <a href="#"><span class="text-primary fa fa-twitter"></span></a>
+              <a href="#"><span class="text-primary fa fa-instagram"></span></a>
+              <a href="#"><span class="text-primary fa fa-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient block clients">
+      <div class="container">
+        <header class="text-center mb-48">
+          <h2 class="text-white clients__heading">
+            Companies that I worked with
+          </h2>
+          <p class="text-white">
+            It's my pleasure working with these companies
+          </p>
+        </header>
+        <div class="clients__list">
+          <picture>
+            <source
+              srcset="images/axe-capital.webp 1x, images/axe-capital@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="images/axe-capital.png 1x, images/axe-capital@2x.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/images/axe-capital@2x.png"
+              alt=""
+              class="clients__image"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                /images/hamp-deville.webp    1x,
+                /images/hamp-deville@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /images/hamp-deville.png    1x,
+                /images/hamp-deville@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="/images/hamp-deville@2x.png"
+              alt=""
+              class="clients__image"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="/images/oscorp.webp 1x, /images/oscorp@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="/images/oscorp.png 1x, /images/oscorp@2x.png 2x"
+              type="image/png"
+            />
+            <img src="/images/oscorp@2x.png" alt="" class="clients__image" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-list" class="block flex-column gap-32 work-list">
+      <div class="container">
+        <header class="text-center">
+          <h2 class="mb-16">Some of my work</h2>
+          <p>
+            I build and design web applications but I'm also doing mobile
+            applications
+          </p>
+        </header>
+      </div>
+      <div>
+        <article class="bg-green work">
+          <div class="work__img">
+            <picture>
+              <source
+                srcset="
+                  /images/admin-dashboard.webp    1x,
+                  /images/admin-dashboard@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  /images/admin-dashboard.png    1x,
+                  /images/admin-dashboard@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                class=""
+                src="/images/admin-dashboard@2x.png"
+                alt="Showing a snapshot of the admin dashboard"
+              />
+            </picture>
+          </div>
+          <div class="work__content">
+            <h3 class="work__content-heading">Admin Dashboard</h3>
+            <p class="work__content-description">
+              Admin Dashboard is the world first hud style admin template which
+              built on top of the popular framework Bootstrap 5.2.0. Concept of
+              design for HUD Admin is based on the HUD ui design and finally it
+              comes out with a clean and neat design. It is built on top of the
+              popular Bootstrap Framework. Besides that, it is bundled with a
+              lot of third party plugins, reusable widget and much more
+            </p>
+          </div>
+        </article>
+        <article class="bg-purple work">
+          <div class="work__img">
+            <picture>
+              <source
+                srcset="
+                  /images/e-commerce.webp    1x,
+                  /images/e-commerce@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="/images/e-commerce.png 1x, /images/e-commerce@2x.png 2x"
+                type="image/png"
+              />
+              <img
+                class=""
+                src="/images/e-commerce@2x.png"
+                alt="Showing a snapshot of the admin dashboard"
+              />
+            </picture>
+          </div>
+          <div class="work__content">
+            <h3 class="work__content-heading">E-commerce</h3>
+            <p class="work__content-description">
+              Dukamarket is the best choice for a modern and clean eCommerce
+              store with 40+ homepage layout and extremely customizable admin
+              settings. Suitable for every type of store.. It is a powerful
+              design tool. Dukamarket an outstanding Premium Shopify theme. It
+              will be perfect solution for your current or future webshop.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block testimonial">
+      <div class="container">
+        <header>
+          <h2 class="text-center">What my client say</h2>
+        </header>
+        <p class="testimonial__content">
+          “Working with John has been an absolute pleasure and we’ll definitely
+          turn to his expertise for new projects.”
+        </p>
+
+        <div class="testimonial__client">
+          <div class="testimonial__image">
+            <picture>
+              <source
+                srcset="images/client-axe.png 1x, images/client-axe@2x.png 2x"
+                type="image/png"
+              />
+              <img
+                class="client-info__image"
+                src="/images/client-axe.png"
+                alt="A client who gave a testimonial"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  images/client-company.png    1x,
+                  images/client-company@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                class="client-info__image"
+                src="/images/client-company.png"
+                alt="client's company"
+              />
+            </picture>
+          </div>
+          <div class="testimonial__client-info">
+            <span class="client-name">James Wittings</span>
+            <span class="client-company"
+              >Marketing Director at Axe Capital</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="talk" class="block talk">
+      <div class="container flex-row gap-56">
+        <div class="talk__image">
+          <picture>
+            <source
+              srcset="
+                /images/thinking-man.png    1x,
+                /images/thinking-man@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="/images/thinking-man@2x.png"
+              alt="A man that has an idea"
+            />
+          </picture>
+        </div>
+        <div class="talk__content">
+          <h3 class="text-center mb-32">
+            I'm currently available for freelance work.
+          </h3>
+          <p class="text-center mb-48">
+            If you're looking for a developer that likes to get stuff done,
+          </p>
+          <button class="btn btn-primary-outline btn-block text-center btn-cta">
+            Let's talk
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="block footer">
+      <div class="top">
+        <img class="footer__logo" src="/images/logo.svg" alt="" />
+        <p class="copyright">Copyright John Smith 2022. All Rights Reserved.</p>
+      </div>
+      <div class="bottom">
+        <div class="privacy-notice">
+          <a href="#" class="text-primary">Privacy Policy</a>
+          <a href="#" class="text-primary">Terms &amp; Condition</a>
+        </div>
+        <div class="social-media">
+          <a href="#"><span class="text-primary fa fa-twitter"></span></a>
+          <a href="#"><span class="text-primary fa fa-instagram"></span></a>
+          <a href="#"><span class="text-primary fa fa-linkedin"></span></a>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+@include breakpoint-xs {
+  $map: map-get($headings, "xs");
+
+  @each $key, $value in $map {
+    #{$key} {
+      color: $base-gray;
+      font-size: $value;
+      transition: $base-transition;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+    .#{$key} {
+      color: $base-gray;
+      font-size: $value;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+  }
+}
+
+@include breakpoint-sm {
+  $map: map-get($headings, "sm");
+
+  @each $key, $value in $map {
+    #{$key} {
+      color: $base-gray;
+      font-size: $value;
+      transition: $base-transition;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+    .#{$key} {
+      color: $base-gray;
+      font-size: $value;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+  }
+}
+
+@include breakpoint-md {
+  $map: map-get($headings, "md");
+
+  @each $key, $value in $map {
+    #{$key} {
+      color: $base-gray;
+      font-size: $value;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+    .#{$key} {
+      color: $base-gray;
+      font-size: $value;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+  }
+}
+
+@include breakpoint-lg {
+  $map: map-get($headings, "lg");
+
+  @each $key, $value in $map {
+    #{$key} {
+      color: $base-gray;
+      font-size: $value;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+
+    .#{$key} {
+      font-size: $value;
+      color: $base-gray;
+      @if ($key != "p" and $key != "a") {
+        line-height: 1.1;
+      }
+    }
+  }
+}

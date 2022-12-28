@@ -1,0 +1,31 @@
+@use "sass:math";
+
+@each $key, $value in $colors {
+  @if ($key != "gradient") {
+    .text-#{$key} {
+      color: $value;
+    }
+  } @else {
+    .text-#{$key} {
+      background-image: $value;
+      background-size: 100%;
+      background-repeat: repeat;
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+  }
+
+  .bg-#{$key} {
+    background: $value;
+  }
+}
+
+@each $key, $value in $grays {
+  .text-gray-#{$key} {
+    color: $value;
+  }
+}

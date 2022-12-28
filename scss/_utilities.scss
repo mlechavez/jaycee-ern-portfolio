@@ -1,0 +1,56 @@
+@each $key, $value in $text-alignments {
+  .text-#{$key} {
+    text-align: $value;
+  }
+}
+
+%flex-layout {
+  display: flex;
+  list-style: none;
+}
+
+.flex-row {
+  @extend %flex-layout;
+  flex-direction: row;
+}
+
+.flex-column {
+  @extend %flex-layout;
+  flex-direction: column;
+}
+
+@each $key, $value in $flex-justifications {
+  .justify-#{$key} {
+    justify-content: $value;
+  }
+}
+
+@each $key, $value in $flex-alignments {
+  .align-#{$key} {
+    align-items: $value;
+  }
+}
+
+@each $key, $value in $flex-gaps {
+  .gap-#{$key} {
+    gap: $value;
+  }
+}
+
+@each $property, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    @if ($property == "padding-vertical") {
+      .#{$prefix}-#{$key} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
+    } @else {
+      .#{$prefix}-#{$key} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

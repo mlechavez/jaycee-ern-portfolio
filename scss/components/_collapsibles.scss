@@ -1,0 +1,15 @@
+.collapsible {
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+}
+
+.collapsible--expanded {
+  .collapsible__content {
+    max-height: fit-content;
+    opacity: 1;
+  }
+}

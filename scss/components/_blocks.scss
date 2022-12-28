@@ -1,0 +1,38 @@
+@include breakpoint-xs {
+  .block {
+    padding-top: $ps-32;
+    padding-bottom: $ps-32;
+  }
+}
+@include breakpoint-sm {
+  .block {
+    padding-top: $ps-48;
+    padding-bottom: $ps-48;
+  }
+}
+@include breakpoint-md {
+  .block {
+    padding-top: $ps-56;
+    padding-bottom: $ps-56;
+  }
+}
+@include breakpoint-lg {
+  .block {
+    padding-top: $ps-64;
+    padding-bottom: $ps-64;
+  }
+}
+
+@include breakpoint-xl {
+  .block {
+    padding-top: $ps-72;
+    padding-bottom: $ps-72;
+  }
+}
+
+@include breakpoint-xxl {
+  .block {
+    padding-top: $ps-96;
+    padding-bottom: $ps-96;
+  }
+}
