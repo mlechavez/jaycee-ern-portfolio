@@ -663,6 +663,11 @@ a {
   transition: all 0.3s;
 }
 
+.collapsible--expanded .collapsible__content {
+  max-height: fit-content;
+  opacity: 1;
+}
+
 @media screen and (min-width: 0) {
   .block {
     padding-top: 1.52rem;
