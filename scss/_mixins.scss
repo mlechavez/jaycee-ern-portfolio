@@ -1,1 +1,60 @@
-@import "mixins/breakpoints";
+@import "./variables";
+
+@mixin breakpoint-sm {
+  @media screen and (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+@mixin breakpoint-md {
+  @media screen and (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+@mixin breakpoint-lg {
+  @media screen and (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+@mixin breakpoint-xl {
+  @media screen and (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+@mixin breakpoint-xxl {
+  @media screen and (min-width: map-get($breakpoints, "xxl")) {
+    @content;
+  }
+}
+
+@mixin initialize-headings($ratio) {
+  $sizes: 5, 4, 3, 2, 1;
+  $base: -1;
+
+  @each $size in $sizes {
+    @if ($base == -1) {
+      $base: $base-font-size * $ratio;
+    } @else {
+      $base: $base * $ratio;
+    }
+    $pxValue: $base;
+    $base: customPxToRem($base);
+
+    h#{$size} {
+      font-size: $base;
+    }
+    .h#{$size} {
+      font-size: $base;
+      font-family: $font-family-heading;
+    }
+    $base: $pxValue;
+  }
+}
+
+@mixin initialize-body($size) {
+  body,
+  h6,
+  p,
+  a {
+    font-size: customPxToRem($size);
+  }
+}

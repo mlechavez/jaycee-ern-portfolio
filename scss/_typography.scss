@@ -1,86 +1,16 @@
-@include breakpoint-xs {
-  $map: map-get($headings, "xs");
+@import "./mixins";
 
-  @each $key, $value in $map {
-    #{$key} {
-      color: $base-gray;
-      font-size: $value;
-      transition: $base-transition;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-    .#{$key} {
-      color: $base-gray;
-      font-size: $value;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-  }
-}
+// extra small and small devices
+@include initialize-headings($mobile-ratio);
+@include initialize-body(8px);
 
-@include breakpoint-sm {
-  $map: map-get($headings, "sm");
-
-  @each $key, $value in $map {
-    #{$key} {
-      color: $base-gray;
-      font-size: $value;
-      transition: $base-transition;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-    .#{$key} {
-      color: $base-gray;
-      font-size: $value;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-  }
-}
-
+// tablets
 @include breakpoint-md {
-  $map: map-get($headings, "md");
-
-  @each $key, $value in $map {
-    #{$key} {
-      color: $base-gray;
-      font-size: $value;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-    .#{$key} {
-      color: $base-gray;
-      font-size: $value;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-  }
+  @include initialize-headings($tablet-ratio);
+  @include initialize-body($base-font-size);
 }
 
-@include breakpoint-lg {
-  $map: map-get($headings, "lg");
-
-  @each $key, $value in $map {
-    #{$key} {
-      color: $base-gray;
-      font-size: $value;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-
-    .#{$key} {
-      font-size: $value;
-      color: $base-gray;
-      @if ($key != "p" and $key != "a") {
-        line-height: 1.1;
-      }
-    }
-  }
+// extra large devices
+@include breakpoint-xl {
+  @include initialize-headings($desktop-ratio);
 }

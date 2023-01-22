@@ -1,4 +1,5 @@
 // variables & functions
+@import "functions";
 @import "variables";
 
 // configurations
@@ -19,8 +20,11 @@
 @import "components/lists";
 @import "components/collapsibles";
 @import "components/blocks";
+@import "components/forms";
 
 // utilities
 @import "utilities";
 
 @import "layouts/home";
+@import "layouts/about";
+@import "layouts/contact";
