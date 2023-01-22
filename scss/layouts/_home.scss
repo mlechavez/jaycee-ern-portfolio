@@ -3,74 +3,59 @@
     text-align: center;
   }
 
+  &__right {
+    display: none;
+  }
+
   &__name {
     @extend .text-gradient;
-    font-size: $fz-mt-6;
-    line-height: 1.1;
-    transition: $base-transition;
-    margin-bottom: $ps-8;
+    @extend .h3;
+    margin-bottom: 1.6rem;
+    font-weight: 300;
   }
 
   &__title {
-    margin-bottom: $ps-16;
-    line-height: 1.1;
-    color: $base-gray;
-    transition: $base-transition;
+    margin-bottom: 2.4rem;
+    @extend .h1;
   }
 
   &__tagline {
-    margin-bottom: $ps-56;
-    transition: $base-transition;
-  }
-
-  &__cta {
-    font-size: 0.7rem;
-    padding: $ps-16 $ps-24;
-    transition: $base-transition;
-  }
-}
-
-@include breakpoint-sm {
-  .intro {
-    &__name {
-      font-size: $fz-mt-3;
-    }
+    margin-bottom: 4.8rem;
   }
 }
 
 @include breakpoint-md {
   .intro {
-    &__name {
-      font-size: $fz-pf-4;
+    &__tagline {
+      width: 560px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &__cta {
-      font-size: $fz-pf-6;
-      padding: $btn-vertical-padding $btn-horizontal-padding;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
 @include breakpoint-lg {
   .intro {
-    &__name {
-      font-size: $fz-pf-3;
-      margin-bottom: $ps-32;
-    }
-
-    &__title {
-      // font-size: $fz-pf-3;
-      margin-bottom: $ps-40;
-      line-height: 0.9;
+    &__left {
+      text-align: left;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
 
     &__tagline {
-      margin-bottom: $ps-64;
+      width: 480px;
+      margin-left: 0;
     }
 
     &__cta {
-      font-size: $base-font-size;
-      padding: $btn-vertical-padding $btn-horizontal-padding;
+      margin-left: 0;
     }
 
     &__image {
@@ -84,14 +69,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: $ps-24;
+      gap: 2.4rem;
     }
 
     &__social-icons {
       align-items: center;
       justify-content: center;
       display: flex;
-      gap: $ps-16;
+      gap: 1.6rem;
     }
   }
 }
@@ -101,28 +86,14 @@
     &__left {
       text-align: left;
     }
-    &__name {
-      font-size: $fz-pf-3;
-    }
 
-    &__title {
-      font-size: $fz-pf-1;
-      line-height: 1.1;
-    }
-
-    &__tagline {
-      margin-bottom: $ps-88;
+    &__tagline,
+    &__cta {
+      width: auto;
     }
 
     &__image {
       width: 400px;
-    }
-
-    &__social-icons {
-      gap: $ps-32;
-      .fa {
-        font-size: 1.5rem;
-      }
     }
   }
 }
@@ -136,6 +107,10 @@
 }
 
 .clients {
+  &__header {
+    margin-bottom: 5.6rem;
+  }
+
   &__heading {
     margin-bottom: 0.5rem;
   }
@@ -145,7 +120,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: $ps-16;
+    gap: 1.6rem;
   }
 
   &__image {
@@ -185,17 +160,20 @@
 
 .work-list {
   padding-bottom: 0;
+
+  &__header {
+    margin-bottom: 5.6rem;
+  }
 }
 
 .work {
   display: flex;
   flex-direction: column;
-  gap: $ps-16;
-  margin-bottom: $ps-48;
+  margin-bottom: 1.6rem;
   position: relative;
 
   &__content {
-    padding: $ps-16;
+    padding: 3.2rem;
     font-weight: 300;
   }
 
@@ -207,7 +185,7 @@
   }
 
   &__content-heading {
-    margin-bottom: $ps-16;
+    margin-bottom: 1.6;
   }
 
   &__article-img img {
@@ -264,8 +242,8 @@
     &__content-description {
       max-width: 700px;
       margin: 0 auto;
-      padding-left: $ps-16;
-      padding-right: $ps-16;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
     }
   }
 }
@@ -321,7 +299,7 @@
     .container {
       display: flex;
       flex-direction: column;
-      gap: $ps-64;
+      gap: 6.4rem;
       align-items: center;
       text-align: center;
     }
@@ -329,11 +307,12 @@
     &__content {
       color: $primary;
       font-weight: 300;
+      width: 56rem;
     }
 
     &__client {
       display: flex;
-      gap: $ps-16;
+      gap: 1.6rem;
       flex-direction: column;
       position: relative;
     }
@@ -354,8 +333,7 @@
     .testimonial__client-info {
       display: flex;
       flex-direction: column;
-      gap: $ps-16;
-      font-size: 0.7rem;
+      gap: 1.6rem;
 
       .client-name {
         font-weight: 700;
@@ -368,18 +346,23 @@
   &__image {
     display: none;
   }
-  .btn-cta {
-    font-size: 0.7rem;
-    padding: 0.76rem 1.14rem;
-    transition: all 0.3s ease;
+
+  &__heading,
+  &__desc {
+    margin-bottom: 3.2rem;
+  }
+
+  .container {
+    justify-content: center;
   }
 }
 
 @include breakpoint-md {
   .talk {
     .btn-cta {
-      font-size: 1.1rem;
-      padding: 0.76rem 1.52rem;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -390,6 +373,15 @@
       display: flex;
       align-items: center;
     }
+
+    &__heading,
+    &__desc {
+      text-align: left;
+    }
+
+    .btn-cta {
+      margin: 0;
+    }
   }
 }
 
@@ -397,7 +389,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: $ps-16;
+  gap: 1.6rem;
 }
 
 .footer {
@@ -411,13 +403,12 @@
   .copyright,
   .privacy-notice > * {
     color: $primary;
-    font-size: 0.8rem;
     text-align: center;
   }
 
   .privacy-notice {
     display: flex;
-    gap: $ps-16;
+    gap: 1.6rem;
   }
 
   .bottom {

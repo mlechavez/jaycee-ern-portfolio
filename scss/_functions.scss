@@ -1,0 +1,12 @@
+@use "sass:math";
+
+@function customPxToRem(
+  $pxValue,
+  $defaultPx: $base-font-size,
+  $multiplier: $multiplier
+) {
+  // I'm using 62.5% font size => 10px
+  // I have to multiply it by 1.8 to get the 18px as base;
+
+  @return #{math.div($pxValue * $multiplier, $defaultPx) + rem};
+}

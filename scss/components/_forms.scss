@@ -1,0 +1,29 @@
+.form-field {
+  width: 100%;
+  max-width: 100%;
+  padding: 2.4rem 2.4rem;
+  border-radius: 40px;
+  border: 2px solid $primary;
+  outline: 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: $gray-75;
+}
+
+.form-group {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 4.8rem;
+  flex-direction: column;
+}
+
+::placeholder {
+  color: lighten($primary, 6.5%);
+  font-size: 1.6rem;
+}
+
+@include breakpoint-md {
+  .form-group {
+    flex-direction: row;
+  }
+}

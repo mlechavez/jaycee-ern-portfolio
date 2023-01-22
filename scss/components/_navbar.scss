@@ -7,9 +7,10 @@
 
 .navbar {
   @extend %navbar-flex;
-  padding: $ps-8;
+  padding: 1.8rem;
 
   .container {
+    width: 100%;
     @extend %navbar-flex;
   }
 
@@ -27,7 +28,6 @@
   }
 
   &__menu {
-    font-size: 0.8rem;
     border-top: 1px solid $gray-10;
   }
 
@@ -39,10 +39,6 @@
       border-bottom: 1px solid $gray-10;
       padding: 16px;
     }
-  }
-
-  &__menu-item > a {
-    font-size: 0.8rem;
   }
 }
 
@@ -58,7 +54,7 @@
       opacity: 1 !important;
       display: flex;
       justify-content: space-between;
-      margin-left: $ps-16;
+      margin-left: 1.6rem;
     }
 
     &__menu-list {
@@ -67,7 +63,7 @@
 
       > li {
         border: 0;
-        padding: 16px;
+        padding: 1.6rem;
       }
     }
 

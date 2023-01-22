@@ -1,27 +1,14 @@
 @use "sass:math";
+@import "./mixins";
 
 .row {
   display: flex;
   flex-flow: row wrap;
 }
 
-@include breakpoint-xs {
-  @for $i from 1 through $grid-columns {
-    .col-xs-#{$i} {
-      display: block;
-      flex-grow: 0;
-      width: math.div($i * 100%, $grid-columns);
-    }
-  }
-  .col-xs-hidden {
-    display: none;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 90vw;
-    margin: 0 auto;
-  }
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 @include breakpoint-sm {
