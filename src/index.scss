@@ -1,0 +1,30 @@
+// variables & functions
+@import "styles/functions";
+@import "styles/variables";
+
+// configurations
+@import "styles/mixins";
+
+// base & layouts
+@import "styles/reboot";
+@import "styles/base";
+@import "styles/grid";
+
+// colors & typography
+@import "styles/colors";
+@import "styles/typography";
+
+// components
+@import "styles/components/buttons";
+@import "styles/components/navbar";
+@import "styles/components/lists";
+@import "styles/components/collapsibles";
+@import "styles/components/blocks";
+@import "styles/components/forms";
+
+// utilities
+@import "styles/utilities";
+
+@import "styles/layouts/home";
+@import "styles/layouts/about";
+@import "styles/layouts/contact";
