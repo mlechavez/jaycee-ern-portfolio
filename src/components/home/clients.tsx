@@ -1,6 +1,6 @@
 import ImageFallback from "../images/ImageFallback";
 
-import { clientsImages } from "../../data/data";
+import { clientsImages } from "../../data";
 
 const Clients = () => {
   return (

@@ -7,7 +7,7 @@ function importAll(r: any) {
 }
 
 const images = importAll(
-  require.context("../assets/images", false, /\.(png|jpe?g|webp|svg)$/)
+  require.context("./assets/images", false, /\.(png|jpe?g|webp|svg)$/)
 );
 
 export const clientsImages = [
@@ -108,5 +108,29 @@ export const testimonials = [
         png: images["client-company.png"],
       },
     ],
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    icon: "fa fa-life-ring",
+    title: "I can build and design a responsive and accessible website.",
+    content:
+      "My goal is to build an accessible and responsive user interface for the web and mobile, while preserving the best practices for proper user experience.",
+  },
+  {
+    id: 2,
+    icon: "fa fa-desktop",
+    title: "I can build and design an eCommerce storefront.",
+    content:
+      "I have an extensive knowledge of development on the front-end and back-end so I’m able to deliver a completely functional e-commerce website",
+  },
+  {
+    id: 3,
+    icon: "fa fa-mobile-phone",
+    title: "I can build and design a mobile app for iOS and Android.",
+    content:
+      "I recently started designing and coding mobile apps and I love it. It’s a different process compared to traditional website design, but I’ve been successful in all project so far.",
   },
 ];
