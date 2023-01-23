@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jaycee-ern-portfolio/static/css/main.ea3e6d1f.css",
-    "main.js": "/jaycee-ern-portfolio/static/js/main.e12969a7.js",
+    "main.js": "/jaycee-ern-portfolio/static/js/main.fa02fe45.js",
     "static/js/787.84b53f39.chunk.js": "/jaycee-ern-portfolio/static/js/787.84b53f39.chunk.js",
     "static/media/admin-dashboard@2x.png": "/jaycee-ern-portfolio/static/media/admin-dashboard@2x.9c0e35f926991d4f5320.png",
     "static/media/jaycee-ern@2x.png": "/jaycee-ern-portfolio/static/media/jaycee-ern@2x.be1d2374773bad61699e.png",
@@ -35,11 +35,11 @@
     "static/media/logo.webp": "/jaycee-ern-portfolio/static/media/logo.26457242fe30dd0669f2.webp",
     "index.html": "/jaycee-ern-portfolio/index.html",
     "main.ea3e6d1f.css.map": "/jaycee-ern-portfolio/static/css/main.ea3e6d1f.css.map",
-    "main.e12969a7.js.map": "/jaycee-ern-portfolio/static/js/main.e12969a7.js.map",
+    "main.fa02fe45.js.map": "/jaycee-ern-portfolio/static/js/main.fa02fe45.js.map",
     "787.84b53f39.chunk.js.map": "/jaycee-ern-portfolio/static/js/787.84b53f39.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea3e6d1f.css",
-    "static/js/main.e12969a7.js"
+    "static/js/main.fa02fe45.js"
   ]
 }
