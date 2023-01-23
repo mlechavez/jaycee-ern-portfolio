@@ -14,7 +14,7 @@ const TestimonialList = ({ items }: TestimonialListProps) => {
         </header>
         <div className="row">
           {items.map((item: any) => (
-            <div className="col-xs-12 col-lg-6">
+            <div key={item.id} className="col-xs-12 col-lg-6">
               <div className="testimonial">
                 <p className="testimonial__content">{`"${item.content}"`}</p>
 
@@ -22,6 +22,7 @@ const TestimonialList = ({ items }: TestimonialListProps) => {
                   <div className="testimonial__image">
                     {item.images.map((image: any) => (
                       <ImageFallback
+                        key={image.id}
                         srcSet={`${image.webpOne} 1x, ${image.webpTwo} 2x`}
                         fallback={image.png}
                         className="client-info__image"

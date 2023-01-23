@@ -15,6 +15,7 @@ const Testimonial = ({ item }: TestimonialProps) => {
           <div className="testimonial__image">
             {item.images.map((image: any) => (
               <ImageFallback
+                key={image.id}
                 srcSet={`${image.webpOne} 1x, ${image.webpTwo} 2x`}
                 fallback={`${image.png}`}
                 alt={item.name}
