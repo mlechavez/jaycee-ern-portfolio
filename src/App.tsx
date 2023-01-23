@@ -25,7 +25,7 @@ const router = createHashRouter(
       ],
     },
   ],
-  { basename: "/jaycee-ern-portfolio" }
+  { basename: "/" }
 );
 
 function App() {

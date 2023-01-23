@@ -4,7 +4,8 @@ import Works from "../components/home/works";
 import Talk from "../components/talk";
 import Testimonial from "../components/testimonial";
 
-import { testimonials } from "../data/data";
+import { testimonials } from "../data";
+
 const HomePage = () => {
   return (
     <>

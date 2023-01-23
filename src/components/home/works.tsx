@@ -1,4 +1,4 @@
-import { worksImages } from "../../data/data";
+import { worksImages } from "../../data";
 import ImageFallback from "../images/ImageFallback";
 
 const Works = () => {
