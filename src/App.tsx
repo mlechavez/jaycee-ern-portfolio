@@ -4,26 +4,29 @@ import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact";
 import HomePage from "./pages/home";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <DefaultLayout />,
-    children: [
-      {
-        index: true,
-        element: <HomePage />,
-      },
-      {
-        path: "about",
-        element: <AboutPage />,
-      },
-      {
-        path: "contact",
-        element: <ContactPage />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <DefaultLayout />,
+      children: [
+        {
+          index: true,
+          element: <HomePage />,
+        },
+        {
+          path: "about",
+          element: <AboutPage />,
+        },
+        {
+          path: "contact",
+          element: <ContactPage />,
+        },
+      ],
+    },
+  ],
+  { basename: "/jaycee-ern-portfolio" }
+);
 
 function App() {
   return <RouterProvider router={router} />;
