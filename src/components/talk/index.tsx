@@ -9,24 +9,11 @@ const Talk = () => {
       <div className="container flex-row gap-56">
         <div className="talk__image">
           <ImageFallback
-            srcSet={`${ThinkingMan} 1, ${ThinkingMan2} 2x`}
+            srcSet={`${ThinkingMan} 1x, ${ThinkingMan2} 2x`}
             fallback={ThinkingMan}
             alt="Thinking Man"
             type="image/png"
           />
-          <picture>
-            <source
-              srcSet="
-                  images/thinking-man.png    1x,
-                  images/thinking-man@2x.png 2x
-                "
-              type="image/png"
-            />
-            <img
-              src="images/thinking-man@2x.png"
-              alt="A man that has an idea"
-            />
-          </picture>
         </div>
         <div className="talk__content">
           <header>
